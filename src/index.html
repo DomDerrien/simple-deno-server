@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <link rel="preload" href="/icons/tradelite.svg" as="image" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
+
+    <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2" as="font"
+        type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2" as="font"
+        type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2" as="font"
+        type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2" as="font"
+        type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmYUtfBBc4AMP6lQ.woff2" as="font"
+        type="font/woff2" crossorigin="anonymous" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="../manifest.json" x-crossorigin="use-credentials" />
+
+    <title>Tradelite Portfolio</title>
+    <meta property="og:title" content="Tradelite Portfolio">
+    <meta name="description"
+        content="The Tradelite Porfolio presents a series of games at various stages of development.">
+    <meta property="og:description"
+        content="The Tradelite Porfolio presents a series of games at various stages of development.">
+    <meta property="og:image" content="/icons/tradelite.svg">
+    <link rel="icon" href="/icons/tradelite.svg" type="image/svg+xml">
+    <link rel="mask-icon" href="/icons/tradelite.svg" color="#606060">
+    <meta name="theme-color" content="#000000">
+    <meta name="author" content="Dom Derrien">
+
+    <style data-description="Grid setup">
+        /* style reset */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* font family definitions */
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: local('Roboto Light'), local('Roboto-Light'),
+                url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+                U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+                U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-display: swap;
+            src: local('Roboto Medium'), local('Roboto-Medium'),
+                url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+                U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: local('Roboto Bold'), local('Roboto-Bold'),
+                url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+                U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            font-display: swap;
+            src: local('Roboto Black'), local('Roboto-Black'),
+                url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmYUtfBBc4AMP6lQ.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+                U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* font size reset--1em = 10px on default browser settings */
+        html {
+            font-size: 62.5%;
+        }
+
+        /* general setting */
+        body {
+            font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+            min-height: 100vh;
+        }
+
+        /* default font-size */
+        tradelite-charter {
+            --font-size: 1.2rem;
+
+            --pbl-grayscale-black: #000;
+            /* rgba(0, 0, 0 1) */
+            --pbl-grayscale-1: #2d2d2d;
+            /* rgba(45, 45, 45, 1) */
+            --pbl-grayscale-2: #383838;
+            /* rgba(56, 56, 56, 1) */
+            --pbl-grayscale-3: #4d4d4f;
+            /* rgba(77, 77, 79, 1) */
+            --pbl-grayscale-4: #585858;
+            /* rgba(88, 88, 88, 1) */
+            --pbl-grayscale-5: #606060;
+            /* rgba(96, 96, 96, 1) */
+            --pbl-grayscale-6: #6a6d6d;
+            /* rgba(106, 106, 106, 1) */
+            --pbl-grayscale-7: #c8c8c8;
+            /* rgba(200, 200, 200, 1) */
+            --pbl-grayscale-8: #d3d3d3;
+            /* rgba(211, 211, 211, 1) */
+            --pbl-grayscale-9: #e0e0e0;
+            /* rgba(224, 224, 224, 1) */
+            --pbl-grayscale-10: #e8e8e8;
+            /* rgba(232, 232, 232, 1) */
+            --pbl-grayscale-11: #f0f0f0;
+            /* rgba(240, 240, 240, 1) */
+            --pbl-grayscale-12: #f5f5f5;
+            /* rgba(245, 245, 245, 1) */
+            --pbl-grayscale-white: #fff;
+            /* rgba(255, 255, 255, 1) */
+
+            --tradelite-highlight: #3FA9F5;
+            --tradelite-highlight-2: #3FF58B;
+            --tradelite-highlight-reverse: #08171E;
+        }
+
+        /* rotating tradelite logo settings */
+        div.waiting,
+        div.error {
+            font-size: 2rem;
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100vh;
+            justify-items: center;
+            align-items: center;
+        }
+
+        div.error {
+            font-size: 1.2rem;
+        }
+
+        img.waiting__hourglass {
+            width: 16px;
+            margin-right: 8px;
+            animation-name: rotation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes rotation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <style>
+        /* general settings for closed captions display, which a singleton living at the top HTML level in <body/> */
+        closed-captions {
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            bottom: 1em;
+            width: 100vw;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        closed-captions .closed-captions-box {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 1rem;
+            padding: 1.5rem;
+        }
+
+        closed-captions .closed-captions-text {
+            color: var(--pbl-grayscale-white, #fff);
+            font-size: 1.375rem;
+        }
+    </style>
+    <script type="importmap">
+    {
+        "imports": {
+            "lit": "https://cdn.jsdelivr.net/npm/lit@2.0.2/index.js",
+            "lit/decorators": "https://cdn.jsdelivr.net/npm/lit@2.0.2/decorators.js",
+            "@lit/reactive-element": "https://cdn.jsdelivr.net/npm/@lit/reactive-element@1.0.2/reactive-element.js",
+            "@lit/reactive-element/decorators/base.js": "https://cdn.jsdelivr.net/npm/@lit/reactive-element@1.0.2/decorators/base.js",
+            "@lit/reactive-element/decorators/custom-element.js": "https://cdn.jsdelivr.net/npm/@lit/reactive-element@1.0.2/decorators/custom-element.js",
+            "@lit/reactive-element/decorators/event-options.js": "https://cdn.jsdelivr.net/npm/@lit/reactive-element@1.0.2/decorators/event-options.js",
+            "@lit/reactive-element/decorators/property.js": "https://cdn.jsdelivr.net/npm/@lit/reactive-element@1.0.2/decorators/property.js",
+            "@lit/reactive-element/decorators/query.js": "https://cdn.jsdelivr.net/npm/@lit/reactive-element@1.0.2/decorators/query.js",
+            "@lit/reactive-element/decorators/query-all.js": "https://cdn.jsdelivr.net/npm/@lit/reactive-element@1.0.2/decorators/query-all.js",
+            "@lit/reactive-element/decorators/query-assigned-nodes.js": "https://cdn.jsdelivr.net/npm/@lit/reactive-element@1.0.2/decorators/query-assigned-nodes.js",
+            "@lit/reactive-element/decorators/query-async.js": "https://cdn.jsdelivr.net/npm/@lit/reactive-element@1.0.2/decorators/query-async.js",
+            "@lit/reactive-element/decorators/state.js": "https://cdn.jsdelivr.net/npm/@lit/reactive-element@1.0.2/decorators/state.js",
+            "lit-html": "https://cdn.jsdelivr.net/npm/lit-html@2.0.2/lit-html.js",
+            "lit-element/lit-element.js": "https://cdn.jsdelivr.net/npm/lit-element@3.0.2/lit-element.js",
+            "last": "noop"
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <script type="module">
+        window.addEventListener('unhandledrejection', function (event) {
+            console.log('****', 'Unhandled Promise Rejection\n****', event);
+            console.log('****', 'Unhandled Promise Rejection\n****', event.reason.stack);
+        });
+    </script>
+
+    <div class="waiting">
+        <span>
+            <img class="waiting__hourglass" src="/icons/tradelite.svg" />
+            Loading...
+        </span>
+    </div>
+
+    <script type="module" async>
+        import(`/libs/portfolio.ts`).then((module) => {
+            module.presentPortfolio(document.querySelector('div.waiting'));
+        });
+    </script>
+</body>
+
+</html>

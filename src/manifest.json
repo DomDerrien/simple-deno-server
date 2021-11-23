@@ -1,0 +1,15 @@
+{
+	"short_name": "TradelitePortfolio",
+	"name": "Tradelite Portfolio",
+	"start_url": "/index.html",
+	"display": "standalone",
+	"background_color": "#fff",
+	"description": "A portable version of the Plankton Studio.",
+	"icons": [
+		{
+			"src": "/icons/tradelite.svg",
+			"sizes": "48x48 100x100 192x192 512x512",
+			"type": "image/svg+xml"
+		}
+	]
+}
