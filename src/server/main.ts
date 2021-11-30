@@ -8,14 +8,49 @@ const router = new Router();
 
 router.get('/(.*)', async (context) => {
 	try {
-		if (context.params && context.params[0]?.startsWith('/server')) {
+		const path = context.params[0] || 'index.html';
+		if (context.params && path.startsWith('server')) {
 			context.response.status = 401;
-		} else {
-			const fileData = await getFile(context.params[0] || 'index.html');
-			context.response.headers.set('Content-Type', fileData.mimeType);
-			context.response.body = fileData.content;
+			return;
 		}
+		const token = context.request.headers.get('Authorization');
+		if (!path.startsWith('api-mocks/v1/game-config') && (!token || !token.startsWith('Bearer '))) {
+			context.response.status = 401;
+			return;
+		}
+		const fileData = await getFile(path);
+		context.response.headers.set('Content-Type', fileData.mimeType);
+		context.response.body = fileData.content;
 	} catch (error) {
+		console.log('Cannot process GET request for: ', context.params[0], 'with', error.message);
+		context.response.status = 404;
+	}
+});
+router.post('/(.*)', async (context) => {
+	try {
+		const path = context.params[0] || 'index.html';
+		if (context.params && path.startsWith('server')) {
+			context.response.status = 401;
+			return;
+		}
+		if (path === 'api-mocks/v1/auth.txt') {
+			const payload = await context.request.body({ type: 'json' }).value;
+			if (payload.username === payload.password) {
+				const fileData = await getFile(path);
+				context.response.headers.set('Content-Type', 'text/plain');
+				context.response.body = fileData.content;
+				context.response.status = 200;
+			} else {
+				context.response.status = 401;
+			}
+			return;
+		}
+		const fileData = await getFile(path);
+		context.response.headers.set('Content-Type', 'text/plain');
+		context.response.headers.set('Location', fileData.content);
+		context.response.status = 201;
+	} catch (error) {
+		console.log('Cannot process POST request for: ', context.params[0], 'with', error.message);
 		context.response.status = 404;
 	}
 });

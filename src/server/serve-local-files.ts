@@ -1,6 +1,6 @@
 import { transform } from 'https://deno.land/x/esbuild/mod.js';
 
-const transformationOptions: any = {
+const transformationOptions: { [key: string]: string | boolean } = {
 	banner: '// © Copyright Tradelite Solutions GmbH 2020-2021',
 	charset: 'utf8',
 	format: 'esm',
@@ -15,15 +15,15 @@ const transformationOptions: any = {
 
 export type FileData = { content: string; mimeType: string };
 
-const fileCche: Map<string, FileData> = new Map();
+// const fileCache: Map<string, FileData> = new Map();
 
 export async function getFile(filename: string): Promise<FileData> {
-	if (fileCche.has(filename)) {
-		const content = fileCche.get(filename);
-		if (content) {
-			return content;
-		}
-	}
+	// if (fileCache.has(filename)) {
+	// 	const content = fileCache.get(filename);
+	// 	if (content) {
+	// 		return content;
+	// 	}
+	// }
 
 	const path = `${Deno.cwd()}/src/${filename}`;
 	console.log('Service filepath:', path);
@@ -52,14 +52,16 @@ export async function getFile(filename: string): Promise<FileData> {
 				output.mimeType = 'image/svg+xml';
 			} else if (extension === 'css') {
 				output.mimeType = 'text/css';
+			} else if (extension === 'txt') {
+				output.mimeType = 'text/plain';
 			}
 
-			fileCche.set(filename, output);
+			// fileCache.set(filename, output);
 
 			return output;
 		}
 	} catch (error) {
-		console.log('!!!!!!', error.message);
+		console.log(`Cannot access the file ${path}`, error.message);
 	}
 
 	throw new Deno.errors.NotFound();
