@@ -1,0 +1,15 @@
+{
+    "id": "StockTiles",
+    "created": 12345,
+    "updated": 23456,
+    "serviceEndpoints": [
+        { "key": "authentication", "url": "http://localhost:8181/api-mocks/v1/auth" },
+        { "key": "user", "url": "http://localhost:8181/api-mocks/v1/users" },
+        { "key": "last", "url": "" }
+    ],
+    "credentials": [
+        { "label": "playerUser", "value": "super@flyer.com" },
+        { "label": "playerPsw", "value": "super@flyer.com" },
+        { "label": "last", "value": "" }
+    ]
+}

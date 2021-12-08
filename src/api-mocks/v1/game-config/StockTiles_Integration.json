@@ -1,0 +1,23 @@
+{
+    "id": "StockTiles",
+    "created": 12345,
+    "updated": 23456,
+    "serviceEndpoints": [
+        { "key": "authentication", "url": "https://int.tradelite.net/bw-oauth/oauth/token" },
+        { "key": "user", "url": "https://int.tradelite.net/user-management/v1.0/user" },
+        { "key": "matchingrun", "url": "https://int.tradelite.net/user-management/v1.0/user" },
+        { "key": "question", "url": "https://int.tradelite.net/user-management/v1.0/user" },
+        { "key": "stockcard", "url": "https://int.tradelite.net/user-management/v1.0/user" },
+        { "key": "last", "url": "" }
+    ],
+    "_3T_credentials": [
+        { "label": "playerName", "value": "test@email.com" },
+        { "label": "playerPsw", "value": "x" },
+        { "label": "last", "value": "" }
+    ],
+    "credentials": [
+        { "label": "playerName", "value": "Fable_Vader_0011@example.com" },
+        { "label": "playerPsw", "value": "Password00011" },
+        { "label": "last", "value": "" }
+    ]
+}

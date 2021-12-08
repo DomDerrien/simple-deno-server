@@ -14,7 +14,10 @@ router.get('/(.*)', async (context) => {
 			return;
 		}
 		const token = context.request.headers.get('Authorization');
-		if (!path.startsWith('api-mocks/v1/game-config') && (!token || !token.startsWith('Bearer '))) {
+		if (
+			!path.startsWith('api-mocks/v1/game-config') &&
+			(!token || !token.startsWith('Bearer '))
+		) {
 			context.response.status = 401;
 			return;
 		}
@@ -22,7 +25,12 @@ router.get('/(.*)', async (context) => {
 		context.response.headers.set('Content-Type', fileData.mimeType);
 		context.response.body = fileData.content;
 	} catch (error) {
-		console.log('Cannot process GET request for: ', context.params[0], 'with', error.message);
+		console.log(
+			'Cannot process GET request for: ',
+			context.params[0],
+			'with',
+			error.message,
+		);
 		context.response.status = 404;
 	}
 });
@@ -50,7 +58,12 @@ router.post('/(.*)', async (context) => {
 		context.response.headers.set('Location', fileData.content);
 		context.response.status = 201;
 	} catch (error) {
-		console.log('Cannot process POST request for: ', context.params[0], 'with', error.message);
+		console.log(
+			'Cannot process POST request for: ',
+			context.params[0],
+			'with',
+			error.message,
+		);
 		context.response.status = 404;
 	}
 });
