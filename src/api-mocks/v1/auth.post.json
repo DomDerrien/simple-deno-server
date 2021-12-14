@@ -1,0 +1,10 @@
+{
+    "access_token": "access_token",
+    "token_type": "bearer",
+    "refresh_token": "refresh_toekn",
+    "expires_in": 2147483646,
+    "scope": "read write",
+    "tenantId": 2,
+    "id": 1672,
+    "userid": 104
+}

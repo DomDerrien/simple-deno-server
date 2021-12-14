@@ -8,8 +8,6 @@
         { "key": "last", "url": "" }
     ],
     "credentials": [
-        { "label": "playerUser", "value": "super@flyer.com" },
-        { "label": "playerPsw", "value": "super@flyer.com" },
         { "label": "last", "value": "" }
     ]
 }

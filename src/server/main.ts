@@ -13,13 +13,15 @@ router.get('/(.*)', async (context) => {
 			context.response.status = 401;
 			return;
 		}
-		const token = context.request.headers.get('Authorization');
 		if (
-			!path.startsWith('api-mocks/v1/game-config') &&
-			(!token || !token.startsWith('Bearer '))
+			path.startsWith('api-mocks') &&
+			path != 'api-mocks/v1/game-config.get.json'
 		) {
-			context.response.status = 401;
-			return;
+			const accessToken = context.request.headers.get('Authorization');
+			if (accessToken !== 'Bearer access_token') { // As defined in `auth.json`
+				context.response.status = 401;
+				return;
+			}
 		}
 		const fileData = await getFile(path);
 		context.response.headers.set('Content-Type', fileData.mimeType);
@@ -41,9 +43,9 @@ router.post('/(.*)', async (context) => {
 			context.response.status = 401;
 			return;
 		}
-		if (path === 'api-mocks/v1/auth.txt') {
-			const payload = await context.request.body({ type: 'json' }).value;
-			if (payload.username === payload.password) {
+		if (path === 'api-mocks/v1/auth.post.json') {
+			const payload = await context.request.body({ type: 'form' }).value;
+			if (payload.get('username') === payload.get('password')) {
 				const fileData = await getFile(path);
 				context.response.headers.set('Content-Type', 'text/plain');
 				context.response.body = fileData.content;
@@ -53,7 +55,20 @@ router.post('/(.*)', async (context) => {
 			}
 			return;
 		}
+		if (path.startsWith('api-mocks')) {
+			const accessToken = context.request.headers.get('Authorization');
+			if (accessToken !== 'Bearer access_token') { // As defined in `auth.json`
+				context.response.status = 401;
+				return;
+			}
+		}
 		const fileData = await getFile(path);
+		if (path === 'api-mocks/v1/users.post.json') {
+			context.response.headers.set('Content-Type', 'application/json');
+			context.response.body = fileData.content;
+			context.response.status = 201;
+			return;
+		}
 		context.response.headers.set('Content-Type', 'text/plain');
 		context.response.headers.set('Location', fileData.content);
 		context.response.status = 201;

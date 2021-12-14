@@ -11,8 +11,12 @@
         { "key": "last", "url": "" }
     ],
     "credentials": [
-        { "label": "playerUser", "value": "super@flyer.com" },
-        { "label": "playerPsw", "value": "super@flyer.com" },
+        { "label": "clientId", "value": "client" },
+        { "label": "clientSecret", "value": "client" },
+        { "label": "adminName", "value": "admin" },
+        { "label": "adminPsw", "value": "admin" },
+        { "label": "playerName", "value": "player" },
+        { "label": "playerPsw", "value": "player" },
         { "label": "last", "value": "" }
     ]
 }

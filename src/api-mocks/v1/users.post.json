@@ -1,0 +1,13 @@
+{
+    "id": 1999,
+    "idExternal": 1673,
+    "email": "Fable_Vader_3941@example.com",
+    "status": "ACTIVE",
+    "firstname": "Fable",
+    "lastname": "Vader",
+    "dateCreated": "2021-12-14T21:50:07.627153+01:00",
+    "dateActivation": "2000-01-01T00:00:00+01:00",
+    "dateAcceptConditions": "2000-01-01T00:00:00+01:00",
+    "acceptConditionsVersion": "v1.0",
+    "mobile": true
+}
