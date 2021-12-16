@@ -1,0 +1,42 @@
+{
+    "logo": "https://s3.polygon.io/logos/amd/logo.png",
+    "listdate": "1990-01-02",
+    "cik": "2488",
+    "bloomberg": "EQ0010001000001000",
+    "figi": null,
+    "lei": "R2I72C950HOYXII45366",
+    "sic": 3674,
+    "country": "usa",
+    "industry": "Semiconductors",
+    "sector": "Technology",
+    "marketcap": 21477261072,
+    "employees": 8900,
+    "phone": "+1 408 749-4000",
+    "ceo": "Lisa T. Su",
+    "url": "http://www.amd.com",
+    "description": "Advanced Micro Devices Inc designs and produces microprocessors and low-power processor solutions for the computer, communications, and consumer electronics industries.",
+    "exchange": "Nasdaq Global Select",
+    "name": "Advanced Micro Devices Inc.",
+    "symbol": "AMD",
+    "exchangeSymbol": "NGS",
+    "hqAddress": {
+        "address": "2485 Augustine Drive Santa Clara CA, 95054",
+        "stateOrPovince": "CA",
+        "hcountry": "USA"
+    },
+    "type": "CS",
+    "updated": "11/16/2018",
+    "tags": [
+        "Technology",
+        "Semiconductors"
+    ],
+    "similar": [
+        "INTC",
+        "MCHP",
+        "NVDA",
+        "TXN",
+        "HPQ",
+        "XLK"
+    ],
+    "active": true
+}

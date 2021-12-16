@@ -1,0 +1,6 @@
+{
+    "id": "r-aaa",
+    "questionNb": 2,
+    "questionIds": [ "q-aaa", "q-bbb" ],
+    "lifeNb": 1
+}

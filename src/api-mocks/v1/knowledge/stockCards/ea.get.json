@@ -1,0 +1,46 @@
+{
+    "logo": "https://s3.polygon.io/logos/ea/logo.png",
+    "listdate": "1994-01-03",
+    "cik": "712515",
+    "bloomberg": "EQ0010367800001000",
+    "figi": null,
+    "lei": "549300O7A67PUEYKDL45",
+    "sic": 7372,
+    "country": "usa",
+    "industry": "Application Software",
+    "sector": "Technology",
+    "marketcap": 26662857422,
+    "employees": 9300,
+    "phone": "+1 650 628-1500",
+    "ceo": "Andrew Wilson",
+    "url": "http://www.ea.com",
+    "description": "Electronic Arts Inc operates in the technology sector. It develops, markets, publishes and distributes video game software and content of various platforms.",
+    "exchange": "Nasdaq Global Select",
+    "name": "Electronic Arts Inc.",
+    "symbol": "EA",
+    "exchangeSymbol": "NGS",
+    "hqAddress": {
+        "address": "209 Redwood Shores Parkway Redwood City CA, 94065",
+        "stateOrProvince": "CA",
+        "country": "USA"
+    },
+    "type": "CS",
+    "updated": "11/16/2018",
+    "tags": [
+        "Technology",
+        "Electronic Gaming & Multimedia",
+        "Application Software"
+    ],
+    "similar": [
+        "MSFT",
+        "TTWO",
+        "GLUU",
+        "ATVI",
+        "SNE",
+        "DIS",
+        "ZNGA",
+        "PTE",
+        "XLK"
+    ],
+    "active": true
+}

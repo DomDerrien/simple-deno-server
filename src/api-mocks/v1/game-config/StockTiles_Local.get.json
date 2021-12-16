@@ -5,9 +5,10 @@
     "serviceEndpoints": [
         { "key": "authentication", "url": "http://localhost:8181/api-mocks/v1/auth" },
         { "key": "user", "url": "http://localhost:8181/api-mocks/v1/users" },
-        { "key": "matchingrun", "url": "http://localhost:8181/api-mocks/v1/questions" },
-        { "key": "question", "url": "http://localhost:8181/api-mocks/v1/users" },
-        { "key": "stockcard", "url": "http://localhost:8181/api-mocks/v1/users" },
+        { "key": "matchingrun", "url": "http://localhost:8181/api-mocks/v1/matching/runs" },
+        { "key": "question", "url": "http://localhost:8181/api-mocks/v1/matching/questions" },
+        { "key": "stockCard", "url": "http://localhost:8181/api-mocks/v1/knowledge/stockCards" },
+        { "key": "answer", "url": "http://localhost:8181/api-mocks/v1/matching/answers" },
         { "key": "last", "url": "" }
     ],
     "credentials": [

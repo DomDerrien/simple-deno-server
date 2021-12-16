@@ -1,0 +1,43 @@
+{
+    "logo": "https://s3.polygon.io/logos/intc/logo.png",
+    "listdate": "1986-07-09",
+    "cik": "50863",
+    "bloomberg": "EQ0010172900001000",
+    "figi": null,
+    "lei": "KNX4USFCNGPY45LOCE31",
+    "sic": 3674,
+    "country": "usa",
+    "industry": "Semiconductors",
+    "sector": "Technology",
+    "marketcap": 219574040000,
+    "employees": 102700,
+    "phone": "+1 408 765-8080",
+    "ceo": "Robert H. Swan",
+    "url": "http://www.intel.com",
+    "description": "Intel Corp is the world's largest chipmaker. It engaged in making a semiconductor chip. It designs and manufactures integrated digital technology products like integrated circuits, for industries such as computing and communications.",
+    "exchange": "Nasdaq Global Select",
+    "name": "Intel Corporation",
+    "symbol": "INTC",
+    "exchangeSymbol": "NGS",
+    "hqAddress": {
+        "address": "2200 Mission College Boulevard Santa Clara CA, 95054-1549",
+        "stateOrProvince": "CA",
+        "country": "USA"
+    },
+    "type": "CS",
+    "updated": "11/16/2018",
+    "tags": [
+        "Technology",
+        "Semiconductors"
+    ],
+    "similar": [
+        "AMAT",
+        "QCOM",
+        "NVDA",
+        "TXN",
+        "AMD",
+        "HPQ",
+        "XLK"
+    ],
+    "active": true
+}

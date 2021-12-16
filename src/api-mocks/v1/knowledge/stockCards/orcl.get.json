@@ -1,0 +1,47 @@
+{
+    "logo": "https://s3.polygon.io/logos/orcl/logo.png",
+    "listdate": "1990-01-02",
+    "cik": "1341439",
+    "bloomberg": "EQ0010175200001000",
+    "figi": null,
+    "lei": null,
+    "sic": 7372,
+    "country": "usa",
+    "industry": "Application Software",
+    "sector": "Technology",
+    "marketcap": 191818749838,
+    "employees": 137000,
+    "phone": "+1 650 506-7000",
+    "ceo": "Mark V. Hurd / Safra Ada Catz",
+    "url": "http://www.oracle.com",
+    "description": "Oracle Corp is a computer software company. It sells enterprise information technology solutions, including databases, middleware, applications, and hardware. The Company primarily offers software licenses, support, and maintenance services worldwide.",
+    "exchange": "New York Stock Exchange",
+    "name": "Oracle Corporation",
+    "symbol": "ORCL",
+    "exchangeSymbol": "NYE",
+    "hqAddress": {
+        "address": "500 Oracle Parkway Redwood City CA, 94065",
+        "stateOrProvince": "CA",
+        "country": "USA"
+    },
+    "type": "CS",
+    "updated": "11/16/2018",
+    "tags": [
+        "Technology",
+        "Software - Infrastructure",
+        "Application Software"
+    ],
+    "similar": [
+        "MSFT",
+        "INTU",
+        "CTXS",
+        "ADBE",
+        "QCOM",
+        "SYMC",
+        "SAP",
+        "RHT",
+        "CRM",
+        "XLK"
+    ],
+    "active": true
+}

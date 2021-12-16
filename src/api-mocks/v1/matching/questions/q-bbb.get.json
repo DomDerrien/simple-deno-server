@@ -1,0 +1,10 @@
+{
+    "id": "q-bbb",
+    "category": "ceoName",
+    "useShort": false,
+    "choiceNb": 3,
+    "longQuestionId": "Who's CEO of Microsoft?",
+    "longChoiceIds": [ "Larry Elisson", "Satya Nadella", "Virginia M. Rometty" ],
+    "stockCardIds": [ "orcl", "msft", "ibm" ],
+    "lifeNb": 1
+}

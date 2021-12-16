@@ -1,0 +1,47 @@
+{
+    "logo": "https://s3.polygon.io/logos/csco/logo.png",
+    "listdate": "1994-01-03",
+    "cik": "858877",
+    "bloomberg": "EQ0010171100001000",
+    "figi": null,
+    "lei": "8E6NF1YAL0WT6CWXXV93",
+    "sic": 3577,
+    "country": "usa",
+    "industry": "Communication Equipment",
+    "sector": "Technology",
+    "marketcap": 211876802073,
+    "employees": 74200,
+    "phone": "+1 408 526-4000",
+    "ceo": "Charles H. Robbins",
+    "url": "http://www.cisco.com",
+    "description": "Cisco Systems Inc is a supplier of data networking equipment and software. Its products include routers, switches, access equipment, and security and network management software which allow data communication among dispersed computer networks.",
+    "exchange": "Nasdaq Global Select",
+    "name": "Cisco Systems Inc.",
+    "symbol": "CSCO",
+    "exchangeSymbol": "NGS",
+    "hqAddress": {
+        "address": "170 West Tasman Drive San Jose CA, 95134-1706",
+        "stateOrProvince": "CA",
+        "country": "USA"
+    },
+    "type": "CS",
+    "updated": "11/16/2018",
+    "tags": [
+        "Technology",
+        "Communication Equipment"
+    ],
+    "similar": [
+        "MSFT",
+        "CTXS",
+        "FFIV",
+        "NTGR",
+        "ERIC",
+        "JNPR",
+        "IBM",
+        "VMW",
+        "MSI",
+        "HPQ",
+        "XLK"
+    ],
+    "active": true
+}

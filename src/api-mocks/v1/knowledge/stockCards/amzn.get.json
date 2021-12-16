@@ -1,0 +1,46 @@
+{
+    "logo": "https://s3.polygon.io/logos/amzn/logo.png",
+    "listdate": "1997-05-15",
+    "cik": "1018724",
+    "bloomberg": "EQ0021695200001000",
+    "figi": null,
+    "lei": "ZXTILKJKG63JELOEG630",
+    "sic": 5961,
+    "country": "usa",
+    "industry": "Retail - Apparel & Specialty",
+    "sector": "Consumer Cyclical",
+    "marketcap": 791855354928,
+    "employees": 566000,
+    "phone": "+1 206 266-1000",
+    "ceo": "Jeffrey P. Bezos",
+    "url": "http://www.amazon.com",
+    "description": "Amazon.com Inc is an online retailer. The Company sells its products through the website which provides services, such as advertising services and co-branded credit card agreements. It also offers electronic devices like Kindle e-readers and Fire tablets.",
+    "exchange": "Nasdaq Global Select",
+    "name": "Amazon.com Inc.",
+    "symbol": "AMZN",
+    "exchangeSymbol": "NGS",
+    "hqAddress": {
+        "address": "410 Terry Avenue North Seattle WA, 98109-5210",
+        "stateOrPRovince": "WA",
+        "country": "USA"
+    },
+    "type": "CS",
+    "updated": "11/16/2018",
+    "tags": [
+        "Consumer Cyclical",
+        "Specialty Retail",
+        "Retail - Apparel & Specialty"
+    ],
+    "similar": [
+        "MSFT",
+        "COST",
+        "EBAY",
+        "OSTK",
+        "MELI",
+        "BKS",
+        "WMT",
+        "CBS",
+        "GOOGL"
+    ],
+    "active": true
+}

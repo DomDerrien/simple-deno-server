@@ -1,0 +1,10 @@
+{
+    "id": "q-aaa",
+    "category": "ceoName",
+    "useShort": false,
+    "choiceNb": 2,
+    "longQuestionId": "Who's CEO of Tesla?",
+    "longChoiceIds": [ "Elon Musk", "Jeff Bezos" ],
+    "stockCardIds": [ "tlsa", "amzn" ],
+    "lifeNb": 1
+}

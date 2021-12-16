@@ -1,0 +1,47 @@
+{
+    "logo": "https://s3.polygon.io/logos/sap/logo.png",
+    "listdate": "1998-08-03",
+    "cik": "1000184",
+    "bloomberg": "EQ0011841200009000",
+    "figi": null,
+    "lei": "529900D6BF99LW9R2E68",
+    "sic": 7371,
+    "country": "deu",
+    "industry": "Application Software",
+    "sector": "Technology",
+    "marketcap": 129582180000,
+    "employees": 93846,
+    "phone": "+49 6227747474",
+    "ceo": "William R. Mcdermott",
+    "url": "http://www.sap.com",
+    "description": "SAP SE is a global software vendor, providing solutions for enterprise resource planning, database management, business intelligence, and vertical-specific software.",
+    "exchange": "New York Stock Exchange",
+    "name": "SAP SE ADS",
+    "symbol": "SAP",
+    "exchangeSymbol": "NYE",
+    "hqAddress": {
+        "address": "Dietmar-Hopp-Allee 16 Walldorf , 69190",
+        "stateOrProvince": "",
+        "country": "DEU"
+    },
+    "type": "CS",
+    "updated": "11/16/2018",
+    "tags": [
+        "Technology",
+        "Software - Application",
+        "Application Software"
+    ],
+    "similar": [
+        "MSFT",
+        "INTU",
+        "ADBE",
+        "EA",
+        "SYMC",
+        "IBM",
+        "CRM",
+        "VMW",
+        "ORCL",
+        "XLK"
+    ],
+    "active": true
+}

@@ -15,7 +15,7 @@ router.get('/(.*)', async (context) => {
 		}
 		if (
 			path.startsWith('api-mocks') &&
-			path != 'api-mocks/v1/game-config.get.json'
+			!path.startsWith('api-mocks/v1/game-config/')
 		) {
 			const accessToken = context.request.headers.get('Authorization');
 			if (accessToken !== 'Bearer access_token') { // As defined in `auth.json`

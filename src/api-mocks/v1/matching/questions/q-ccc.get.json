@@ -1,0 +1,10 @@
+{
+    "id": "q-ccc",
+    "category": "ceoName",
+    "useShort": false,
+    "choiceNb": 5,
+    "longQuestionId": "Who's CEO of Adobe?",
+    "longChoiceIds": [ "Daniel H. Schulman", "William R. Mcdermott", "Robert H. Swan", "Shantanu Narayen", "Andrew Wilson" ],
+    "stockCardIds": [ "pypl", "sap", "intc", "adbe", "ea" ],
+    "lifeNb": 1
+}

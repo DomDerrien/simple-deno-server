@@ -1,0 +1,48 @@
+{
+    "logo": "https://s3.polygon.io/logos/adbe/logo.png",
+    "listdate": "1990-01-02",
+    "cik": "796343",
+    "bloomberg": "EQ0010168900001000",
+    "figi": null,
+    "lei": "FU4LY2G4933NH2E1CP29",
+    "sic": 7372,
+    "country": "usa",
+    "industry": "Application Software",
+    "sector": "Technology",
+    "marketcap": 117127639804,
+    "employees": 17973,
+    "phone": "+1 408 536-6000",
+    "ceo": "Shantanu Narayen",
+    "url": "http://www.adobe.com",
+    "description": "Adobe Systems Inc offers a line of software and services for content creation and the measurement of digital advertising and marketing. Its software applications includes Photoshop and Lightroom, Adobe Analytics, Media Optimizer and Campaign Manager.",
+    "exchange": "Nasdaq Global Select",
+    "name": "Adobe Inc.",
+    "symbol": "ADBE",
+    "exchangeSymbol": "NGS",
+    "hqAddress": {
+        "address": "345 Park Avenue San Jose CA, 95110-2704",
+        "stateOrProvince": "CA",
+        "country": "USA"
+    },
+    "type": "CS",
+    "updated": "11/16/2018",
+    "tags": [
+     "Technology",
+     "Software - Application",
+     "Application Software"
+    ],
+    "similar": [
+     "MSFT",
+     "INTU",
+     "ADSK",
+     "SYMC",
+     "NUAN",
+     "TYPE",
+     "SAP",
+     "RHT",
+     "CRM",
+     "ORCL",
+     "XLK"
+    ],
+    "active": true
+   }
