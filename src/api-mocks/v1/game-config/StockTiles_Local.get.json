@@ -5,6 +5,7 @@
     "serviceEndpoints": [
         { "key": "authentication", "url": "http://localhost:8181/api-mocks/v1/auth" },
         { "key": "user", "url": "http://localhost:8181/api-mocks/v1/users" },
+        { "key": "guest", "url": "http://localhost:8181/api-mocks/v1/guests" },
         { "key": "matchingrun", "url": "http://localhost:8181/api-mocks/v1/matching/runs" },
         { "key": "question", "url": "http://localhost:8181/api-mocks/v1/matching/questions" },
         { "key": "stockCard", "url": "http://localhost:8181/api-mocks/v1/knowledge/stockCards" },

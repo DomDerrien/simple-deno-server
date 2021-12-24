@@ -65,7 +65,20 @@ router.post('/(.*)', async (context) => {
 		const fileData = await getFile(path);
 		if (path === 'api-mocks/v1/users.post.json') {
 			context.response.headers.set('Content-Type', 'application/json');
+			context.response.headers.set(
+				'Location',
+				'api-mocks/v1/users/' + JSON.parse(fileData.content).id,
+			);
 			context.response.body = fileData.content;
+			context.response.status = 201;
+			return;
+		}
+		if (path === 'api-mocks/v1/guests.post.txt') {
+			context.response.headers.set('Content-Type', 'application/json');
+			context.response.headers.set(
+				'Location',
+				'api-mocks/v1/guests/' + fileData.content,
+			);
 			context.response.status = 201;
 			return;
 		}
